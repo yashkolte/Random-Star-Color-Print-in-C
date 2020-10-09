@@ -4,14 +4,21 @@
 
 int main()
 {
-    // printf("%d", number);
+    printf("#--------------------------------- Random Number Start Printer In C -----------------------------------#\n\n");
+    int line, visu;
+    printf("\tEnter The Number of Lines ... (Recommendtion :- Try bigger Number) \n");
+    scanf("%d", &line);
+    printf("\n\tEnter The Number of Visualisation ... (Recommendtion :- Try bigger Number)\n");
+    scanf("%d", &visu);
+    printf("\n");
 
-    for (int x = 0; x <= 10; x++)
+    srand(time(NULL));
+
+    for (int x = 1; x <= line; x++)
     {
         int number;
-        srand(time(0));
-        number = rand() % 10;
-        
+        number = rand() % visu;
+
         for (int y = 0; y < number; y++)
         {
             printf("*");
