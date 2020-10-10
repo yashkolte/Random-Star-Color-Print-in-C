@@ -4,10 +4,13 @@
 
 int main()
 {
-    printf("#--------------------------------- Random Number Start Printer In C -----------------------------------#\n\n");
+    printf("\033[0;32m");
+    printf("\n\n#--------------------------------- Random Number Start Printer In C -----------------------------------#\n\n");
+    printf("\033[0;35m");
     int line, visu;
-    printf("\tEnter The Number of Lines ... (Recommendtion :- Try bigger Number) \n");
+    printf("\t\tEnter The Number of Lines ... (Recommendtion :- Try bigger Number) \n");
     scanf("%d", &line);
+    printf("\033[1;34m");
     printf("\n\tEnter The Number of Visualisation ... (Recommendtion :- Try bigger Number)\n");
     scanf("%d", &visu);
     printf("\n");
@@ -23,6 +26,7 @@ int main()
         {
             printf("*");
         }
+        printf("\033[0;3%dm", rand() % 7 +1 );
         printf("\n");
     }
     return 0;
