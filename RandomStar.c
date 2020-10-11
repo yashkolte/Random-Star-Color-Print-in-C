@@ -20,14 +20,15 @@ int main()
     for (int x = 1; x <= line; x++)
     {
         int number;
-        number = rand() % visu;
+        number = rand() % visu + 1;
 
         for (int y = 0; y < number; y++)
         {
             printf("*");
         }
-        printf("\033[0;3%dm", rand() % 7 +1 );
+        printf("\033[0;3%dm", rand() % 7 + 1);
         printf("\n");
     }
+    getch(printf("Press any key to Exit"));
     return 0;
 }
