@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <conio.h>
 
-int main()
+void main()
 {
     printf("\033[0;32m");
     printf("\n\n#--------------------------------- Random Number Start Printer In C -----------------------------------#\n\n");
@@ -29,6 +30,6 @@ int main()
         printf("\033[0;3%dm", rand() % 7 + 1);
         printf("\n");
     }
-    getch(printf("Press any key to Exit"));
-    return 0;
+    printf("Press any key to Exit");
+    getch();
 }
